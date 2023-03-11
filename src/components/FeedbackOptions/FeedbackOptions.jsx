@@ -9,7 +9,7 @@ export const FeedbackOption = ({ options, onLeaveFeedback }) => {
           key={shortid.generate()}
           type="button"
           name={option}
-          onClick={onLeaveFeedback}
+          onClick={() => onLeaveFeedback(option)}
         >
           {option}
         </button>
